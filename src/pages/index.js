@@ -39,7 +39,7 @@ export default function index() {
   return (
     <>
       <section className='h-screen flex items-center' id='home'>
-        <div className='md:translate-y-[-20%]'>
+        <div className='xl:translate-y-[-20%]'>
           <h1 className='text-zinc-100 font-semibold text-3xl md:text-5xl'>I&apos;m a web developer building<br/> creative projects
             <strong className='text-4xl md:text-6xl text-teal-500'>
               .
