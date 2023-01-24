@@ -47,7 +47,7 @@ export default function index() {
           </h1>
           <p className='text-zinc-400 mt-8 mb-6'>
             With intermediate experience in both front- and backend development, <br/>
-            I&apos;m currently a freelancing full stack developer building projects for fun that make my daily life a bit easier.
+            I&apos;m currently a freelancing full stack developer building projects for fun.
           </p>
           <Button
             text="Contact me"
