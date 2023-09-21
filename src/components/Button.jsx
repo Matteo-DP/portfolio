@@ -11,8 +11,6 @@ export default function Button({ href, text, type = "primary", icon = undefined,
             href={href}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
-            target="_blank"
-            rel="noreferrer"
         >
             {icon}
             {text}
