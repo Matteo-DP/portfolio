@@ -1,9 +1,6 @@
 import React from 'react'
 import projects from "public/projects/list.json"
 import ProjectPage from '@/components/ProjectPage';
-import { remark } from 'remark';
-import remarkGfm from 'remark-gfm';
-import html from 'remark-html';
 
 export default function Project({ project, markdown }) {
 
@@ -32,9 +29,10 @@ export async function getServerSideProps(ctx) {
     }
 
     // Get corresponding markdown file
-    const fs = require('fs').promises;
-    const path = `public/projects/${project.path}.md`
-    const markdown = await fs.readFile(path, 'utf8');
+    
+    const path = process.env.NEXT_PUBLIC_BASE_URL + `/projects/${project.path}.md`
+    const res = await fetch(path);
+    const markdown = await res.text();
 
     return { props: { project, markdown } }
 }
