@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@/components/Button'
 import Tag from '@/components/Tag'
+import VisitProjectButton from './VisitProjectButton'
 
 
 export default function ProjectCard({ href, description, title, date, tags, privateProject, path }) {
@@ -24,10 +25,7 @@ export default function ProjectCard({ href, description, title, date, tags, priv
                     href={`/project/${path}`}
                     icon={<i className="fa-solid fa-link fa-sm mr-2"></i>}
                 />
-                <a className='ml-6 group text-zinc-200' href={href} target="_blank" rel="noreferrer">
-                    Visit project
-                    <i className='fa-solid fa-arrow-right ml-4 group-hover:translate-x-3 ease-in transition-transform' />
-                </a>
+                <VisitProjectButton href={href} />
             </div>
             </div>
         </div>

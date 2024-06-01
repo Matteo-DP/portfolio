@@ -2,8 +2,25 @@ import '@/styles/tailwind.css'
 import '@/styles/global.css'
 import Script from 'next/script' // FontAwesome
 import Head from 'next/head'
+import { createContext } from 'react'
+import { useState } from 'react'
+import ErrorCard from '@/components/ErrorCard'
+
+export const ErrorContext = createContext();
 
 export default function App({ Component, pageProps }) {
+  const [error, setError] = useState();
+
+  const raiseError = (error) => {
+    console.log("Error raised: " + error.message)
+    setError(error);
+    setTimeout(clearError, error.time * 1000)
+  }
+
+  const clearError = () => {
+    setError(null)
+  };
+
   return(
     <>
       <Head>
@@ -20,7 +37,10 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Script src='/smoothScroll.js'></Script>
       <Script src='https://kit.fontawesome.com/2ad3ea3c29.js' crossOrigin='anonymous'></Script>
-      <Component {...pageProps} />
+      <ErrorContext.Provider value={raiseError}>
+        <Component {...pageProps} />
+        {error && <ErrorCard error={error} />}
+      </ErrorContext.Provider>
     </>
   )
 }

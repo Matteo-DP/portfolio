@@ -28,12 +28,15 @@ export default function ProjectPage({ project, markdown }) {
               tooltipText={"Sorry, this project is private. Please contact me for more info"}
               icon={<i className="fa-solid fa-link fa-sm mr-2"></i>}
             />
-            <a className='ml-6 group text-zinc-200 underline' href={project.github} target="_blank" rel="noreferrer">
-                View on
-                <i className='fa-brands fa-github mr-1 ml-2' />
-                <p className='inline'>Github</p>
-                <i className='fa-solid fa-arrow-right ml-4 group-hover:translate-x-3 ease-in transition-transform' />
-            </a>
+            {
+              project.github &&
+              <a className='ml-6 group text-zinc-200 underline' href={project.github} target="_blank" rel="noreferrer">
+                  View on
+                  <i className='fa-brands fa-github mr-1 ml-2' />
+                  <p className='inline'>Github</p>
+                  <i className='fa-solid fa-arrow-right ml-4 group-hover:translate-x-3 ease-in transition-transform' />
+              </a>
+            }
           </div>
 
           <div className='w-full pt-10'>

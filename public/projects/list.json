@@ -6,7 +6,8 @@
       "privateProject": true,
       "href": "",
       "path": "smartlighting",
-      "github": "https://github.com/Matteo-DP/lamp-api"
+      "github": "https://github.com/Matteo-DP/lamp-api",
+      "featured": true
     },
     {
       "title":"URL Shortener",
@@ -15,7 +16,8 @@
       "privateProject": false,
       "href": "https://url-shortener-beige.vercel.app/",
       "path": "urlshortener",
-      "github": "https://github.com/Matteo-DP/url-shortener"
+      "github": "https://github.com/Matteo-DP/url-shortener",
+      "featured": false
     },
     {
       "title":"Whats in your fridge?",
@@ -24,15 +26,27 @@
       "privateProject": false,
       "href": "https://whatsinyourfridge.vercel.app/",
       "path": "whatsinyourfridge",
-      "github": "https://github.com/Matteo-DP/recipe-recommendation"
+      "github": "https://github.com/Matteo-DP/recipe-recommendation",
+      "featured": true
     },
     {
       "title":"Portfolio website",
       "description":"Simple portfolio website built with NextJS and TailwindCSS.",
       "tags": ["NextJS", "TailwindCSS"],
       "privateProject": false,
-      "href": "#home",
+      "href": "",
       "path": "portfolio",
-      "github": "https://github.com/Matteo-DP/portfolio"
+      "github": "https://github.com/Matteo-DP/portfolio",
+      "featured": false
+    },
+    {
+      "title":"Art portfolio",
+      "description":"Full-stack art portfolio website powered by Pocketbase.",
+      "tags": ["NextJS", "TailwindCSS", "Pocketbase", "Full-stack"],
+      "privateProject": false,
+      "href": "https://margaux-portfolio.vercel.app/",
+      "path": "artportfolio",
+      "github": "",
+      "featured": false
     }
 ]
