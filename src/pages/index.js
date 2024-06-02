@@ -37,7 +37,7 @@ export default function index() {
         <FeaturedProjectsGrid
           projects={featuredProjects}
         />
-        <h1 className='text-2xl font-semibold text-zinc-300 pt-32 mb-4'>All projects</h1>
+        <h1 className='text-2xl font-semibold text-zinc-300 pt-32 mb-4'>Some more projects</h1>
         <ProjectsList 
           projects={projects}
         />

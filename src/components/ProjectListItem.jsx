@@ -17,7 +17,9 @@ export default function ProjectListItem({ project }) {
           href={`/project/${project.path}`}
           icon={<i className="fa-solid fa-link fa-sm mr-2"></i>}
         />
-      <VisitProjectButton href={project.href} />
+      {!project.privateProject &&
+        <VisitProjectButton href={project.href} />
+      }
     </div>
   )
 }

@@ -1,52 +1,72 @@
 [
-    {
-      "title":"Smart lighting",
-      "description":"Full-stack smart lighting web application. Backend built with Python and hosted on a Raspberry Pi B+ wired to a relay. Front-end in Next.js which includes comprehensive statistics broken down into hours per day by default with the option of advanced time filtering.",
-      "tags": ["Full-stack", "Python", "NextJS", "TailwindCSS", "SQLite"],
-      "privateProject": true,
-      "href": "",
-      "path": "smartlighting",
-      "github": "https://github.com/Matteo-DP/lamp-api",
-      "featured": true
-    },
-    {
-      "title":"URL Shortener",
-      "description":"Simple full-stack url shortener webapp using Firebase authentication and a MySQL database.",
-      "tags": ["Full-stack", "NextJS", "TailwindCSS", "Firebase Auth", "MySQL"],
-      "privateProject": false,
-      "href": "https://url-shortener-beige.vercel.app/",
-      "path": "urlshortener",
-      "github": "https://github.com/Matteo-DP/url-shortener",
-      "featured": false
-    },
-    {
-      "title":"Whats in your fridge?",
-      "description":"Full-stack recipe recommendation webapp. Input the desired ingredients and search through 500K+ recipes. OpenAI generated recommended recipe. Includes the option to save recipes when logged in.",
-      "tags": ["Full-stack", "NextJS", "TailwindCSS", "Firebase Auth", "MySQL", "OpenAI API"],
-      "privateProject": false,
-      "href": "https://whatsinyourfridge.vercel.app/",
-      "path": "whatsinyourfridge",
-      "github": "https://github.com/Matteo-DP/recipe-recommendation",
-      "featured": true
-    },
-    {
-      "title":"Portfolio website",
-      "description":"Simple portfolio website built with NextJS and TailwindCSS.",
-      "tags": ["NextJS", "TailwindCSS"],
-      "privateProject": false,
-      "href": "",
-      "path": "portfolio",
-      "github": "https://github.com/Matteo-DP/portfolio",
-      "featured": false
-    },
-    {
-      "title":"Art portfolio",
-      "description":"Full-stack art portfolio website powered by Pocketbase.",
-      "tags": ["NextJS", "TailwindCSS", "Pocketbase", "Full-stack"],
-      "privateProject": false,
-      "href": "https://margaux-portfolio.vercel.app/",
-      "path": "artportfolio",
-      "github": "",
-      "featured": false
-    }
+  {
+    "title": "Greenhouse",
+    "description": "Plant monitoring through light, temp, humidity and moisture sensors. Data is sent to a database and graphed on a web application with the option of advanced time filtering.",
+    "tags": ["Full-stack", "Python", "NextJS", "TailwindCSS", "MySQL", "Raspberry Pi", "Arduino", "Electronics", "Systemctl services"],
+    "privateProject": false,
+    "href": "https://ip-greenhouse.vercel.app/",
+    "path": "greenhouse",
+    "github": "https://github.com/Matteo-DP/greenhouse_arduino",
+    "featured": true
+  },
+  {
+    "title":"Smart lighting",
+    "description":"Full-stack smart lighting web application. Backend built with Python and hosted on a Raspberry Pi B+ wired to a relay. Front-end in Next.js which includes comprehensive statistics broken down into hours per day by default with the option of advanced time filtering.",
+    "tags": ["Full-stack", "Python", "NextJS", "TailwindCSS", "SQLite"],
+    "privateProject": true,
+    "href": "",
+    "path": "smartlighting",
+    "github": "https://github.com/Matteo-DP/lamp-api",
+    "featured": true
+  },
+  {
+    "title":"URL Shortener",
+    "description":"Simple full-stack url shortener webapp using Firebase authentication and a MySQL database.",
+    "tags": ["Full-stack", "NextJS", "TailwindCSS", "Firebase Auth", "MySQL"],
+    "privateProject": false,
+    "href": "https://url-shortener-beige.vercel.app/",
+    "path": "urlshortener",
+    "github": "https://github.com/Matteo-DP/url-shortener",
+    "featured": false
+  },
+  {
+    "title":"Whats in your fridge?",
+    "description":"Full-stack recipe recommendation webapp. Input the desired ingredients and search through 500K+ recipes. OpenAI generated recommended recipe. Includes the option to save recipes when logged in.",
+    "tags": ["Full-stack", "NextJS", "TailwindCSS", "Firebase Auth", "MySQL", "OpenAI API"],
+    "privateProject": false,
+    "href": "https://whatsinyourfridge.vercel.app/",
+    "path": "whatsinyourfridge",
+    "github": "https://github.com/Matteo-DP/recipe-recommendation",
+    "featured": false
+  },
+  {
+    "title":"Portfolio website",
+    "description":"Simple portfolio website built with NextJS and TailwindCSS.",
+    "tags": ["NextJS", "TailwindCSS"],
+    "privateProject": false,
+    "href": "",
+    "path": "portfolio",
+    "github": "https://github.com/Matteo-DP/portfolio",
+    "featured": false
+  },
+  {
+    "title":"Art portfolio",
+    "description":"Full-stack art portfolio website powered by Pocketbase.",
+    "tags": ["NextJS", "TailwindCSS", "Pocketbase", "Full-stack"],
+    "privateProject": false,
+    "href": "https://margaux-portfolio.vercel.app/",
+    "path": "artportfolio",
+    "github": "",
+    "featured": false
+  },
+  {
+    "title": "Herald: LoL Discord bot",
+    "description": "Discord bot that fetches live game data from the Riot API with various features.",
+    "privateProject": true,
+    "tags": ["Python", "Discord API", "Riot API"],
+    "href": "",
+    "path": "herald",
+    "github": "",
+    "featured": false
+  }
 ]
